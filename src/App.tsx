@@ -9,6 +9,7 @@ import './App.css'
 //import List from './01-lista/01-list';
 //import CounterList from './01-lista/02-counterList';
 import ListaTareas from './01-lista/03-actualizarObj-dentroDearray';
+import ListaTarreasConImmer from './01-lista/04-actualizarObj-conImmer';
 
 function App() {
   //const [count, setCount] = useState(0);
@@ -18,7 +19,8 @@ function App() {
       {/*<ListEscultores/>*/}
       {/*<BucketList></BucketList>*/}
       {/*<ShoppingCart/>*/}
-      <ListaTareas></ListaTareas>
+      {/*<ListaTareas></ListaTareas>*/}
+      <ListaTarreasConImmer/>
       {/*<CounterList></CounterList>*/}
       {/*<List></List>*/}
     </>
