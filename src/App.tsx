@@ -6,8 +6,9 @@ import './App.css'
 //import ListEscultores from './01-lista/lista-escultors';
 //import BucketList from './01-lista/bucketlist';
 //import ShoppingCart from './01-lista/01-desafioShopingCart';
-import List from './01-lista/01-list';
-import CounterList from './01-lista/02-counterList';
+//import List from './01-lista/01-list';
+//import CounterList from './01-lista/02-counterList';
+import ListaTareas from './01-lista/actualizarObj-dentroDearray';
 
 function App() {
   //const [count, setCount] = useState(0);
@@ -17,7 +18,8 @@ function App() {
       {/*<ListEscultores/>*/}
       {/*<BucketList></BucketList>*/}
       {/*<ShoppingCart/>*/}
-      <CounterList></CounterList>
+      <ListaTareas></ListaTareas>
+      {/*<CounterList></CounterList>*/}
       {/*<List></List>*/}
     </>
   )
