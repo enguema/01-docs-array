@@ -20,20 +20,17 @@ export default function ShoppingCart() {
     }
 
     function handledecreaseClick(productId) {
-        setProducts(products.map(p => {
-            if (productId === p.id && p.count == 1) {
-                setProducts(products.filter(prods => {
-                    prods.id !== p.id;
-                    return {products};
-                }))
-               alert("Umbral alcanzado")
-            }
-            if (productId === p.id && p.count > 1) {
+        const newProducts = products.map(p => {
+            if (productId === p.id ) {
                 return { ...p, count: p.count - 1 }
             } else {
+                //setProducts(products.filter(p=> p.id !== productId));
+                //const c=products.filter(p=> p.id !== productId);
                 return p;
             }
-        }))
+        });
+        const r = newProducts.filter(p => p.count > 0);
+        setProducts(r);
     }
 
     return (
