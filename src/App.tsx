@@ -8,7 +8,7 @@ import './App.css'
 //import ShoppingCart from './01-lista/01-desafioShopingCart';
 //import List from './01-lista/01-list';
 //import CounterList from './01-lista/02-counterList';
-import ListaTareas from './01-lista/actualizarObj-dentroDearray';
+import ListaTareas from './01-lista/03-actualizarObj-dentroDearray';
 
 function App() {
   //const [count, setCount] = useState(0);
