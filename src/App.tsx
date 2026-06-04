@@ -9,7 +9,7 @@ import './App.css'
 //import List from './01-lista/01-list';
 //import CounterList from './01-lista/02-counterList';
 //import ListaTareas from './01-lista/03-actualizarObj-dentroDearray';
-import ListaTarreasConImmer from './01-lista/04-actualizarObj-conImmer';
+//import ListaTarreasConImmer from './01-lista/04-actualizarObj-conImmer';
 import ShoppingCart from './01-lista/01-desafioShopingCart';
 
 function App() {
