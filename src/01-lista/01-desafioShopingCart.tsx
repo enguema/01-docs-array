@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
 const initialProducts = [
@@ -46,16 +47,16 @@ export default function ShoppingCart() {
                         {' '}
                         (<b> {prod.count}</b>)
 
-                        <button color="cyan" onClick={() => {
+                        <Button className="bg-blue-500 hover:bg-blue-600 text-white" onClick={() => {
                             handlecreaseClick(prod.id);
                         }}>
                             +
-                        </button>
-                        <button onClick={() => {
+                        </Button>
+                        <Button color="red" onClick={() => {
                             handledecreaseClick(prod.id);
                         }}>
                             -
-                        </button>
+                        </Button>
                     </li>
                 ))}
             </ul>

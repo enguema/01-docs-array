@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
 let nextId = 0;
@@ -36,7 +37,7 @@ export default function ListEscultores() {
                 <ul className="l-padding">
                     {artist.map(art => (
                         <li key={art.id}>{art.name}
-                            <button onClick={()=>{
+                            <Button className="bg-red-500 " onClick={()=>{
                                 setArtist(
                                     artist.filter(a=> 
                                         a.id !== art.id
@@ -44,7 +45,7 @@ export default function ListEscultores() {
                                 )
                             }}>
                                 Eliminar
-                            </button>
+                            </Button>
                         </li>
                     ))}
                 </ul>
