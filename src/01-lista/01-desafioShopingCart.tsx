@@ -21,7 +21,7 @@ export default function ShoppingCart() {
 
     function handledecreaseClick(productId) {
         const newProducts = products.map(p => {
-            if (productId === p.id ) {
+            if (productId === p.id) {
                 return { ...p, count: p.count - 1 }
             } else {
                 //setProducts(products.filter(p=> p.id !== productId));
@@ -36,6 +36,9 @@ export default function ShoppingCart() {
     return (
         <>
             <h4>Shopping Cart</h4>
+            <h1 className="text-3xl font-bold underline">
+                Hello world!
+            </h1>
             <ul>
                 {products.map(prod => (
                     <li key={prod.id}>
@@ -43,7 +46,7 @@ export default function ShoppingCart() {
                         {' '}
                         (<b> {prod.count}</b>)
 
-                        <button onClick={() => {
+                        <button color="cyan" onClick={() => {
                             handlecreaseClick(prod.id);
                         }}>
                             +
