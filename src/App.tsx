@@ -11,6 +11,7 @@ import './App.css'
 //import ListaTareas from './01-lista/03-actualizarObj-dentroDearray';
 //import ListaTarreasConImmer from './01-lista/04-actualizarObj-conImmer';
 import ShoppingCart from './01-lista/01-desafioShopingCart';
+import Calculator from './calculator/Calculator';
 
 function App() {
   //const [count, setCount] = useState(0);
@@ -22,9 +23,10 @@ function App() {
       {/*<ShoppingCart/>*/}
       {/*<ListaTareas></ListaTareas>*/}
       {/*<ListaTarreasConImmer/>*/}
-      <ShoppingCart/>
+      {/*<ShoppingCart/>*/}
       {/*<CounterList></CounterList>*/}
       {/*<List></List>*/}
+      <Calculator/>
     </>
   )
 }

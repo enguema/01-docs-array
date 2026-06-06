@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export type OperationType = "+" | "-" | "×" | "÷" | null;
-export default function useCalculator() {
+export  function useCalculator() {
     /**
      * ESTADOS DE LA CALCULADORA
      */
