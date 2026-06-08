@@ -12,6 +12,8 @@ import './App.css'
 //import ListaTarreasConImmer from './01-lista/04-actualizarObj-conImmer';
 //import ShoppingCart from './01-lista/01-desafioShopingCart';
 import Calculator from './calculator/Calculator';
+import Desestructuracion from './expresiones-operaciones/desestructuracion';
+import ProgAsincrona from './sincrona-asincrona/01-asincrona';
 
 function App() {
   //const [count, setCount] = useState(0);
@@ -26,7 +28,10 @@ function App() {
       {/*<ShoppingCart/>*/}
       {/*<CounterList></CounterList>*/}
       {/*<List></List>*/}
-      <Calculator/>
+
+      {/*<Desestructuracion/>*/}
+      <ProgAsincrona/>
+       {/*<Calculator/>*/}
     </>
   )
 }
