@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import fetchApi from "./02-fetchapi";
 
 export default function ProgAsincrona() {
 
@@ -32,7 +33,8 @@ export default function ProgAsincrona() {
         return primes;
     }
 
-   
+    //--- FETCH API ---
+   fetchApi();
 
 
     return (
