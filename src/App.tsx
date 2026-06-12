@@ -3,6 +3,7 @@
 //import viteLogo from './assets/vite.svg'
 //import heroImg from './assets/hero.png'
 import './App.css'
+import Form from './reducer/01-gestionDeEstado';
 //import ListEscultores from './01-lista/lista-escultors';
 //import BucketList from './01-lista/bucketlist';
 //import ShoppingCart from './01-lista/01-desafioShopingCart';
@@ -14,7 +15,7 @@ import './App.css'
 //import Calculator from './calculator/Calculator';
 //import Desestructuracion from './expresiones-operaciones/desestructuracion';
 //import ProgAsincrona from './sincrona-asincrona/01-asincrona';
-import AsincFunciones from './sincrona-asincrona/02-funcion-asinc';
+//import AsincFunciones from './sincrona-asincrona/02-funcion-asinc';
 
 function App() {
   //const [count, setCount] = useState(0);
@@ -33,7 +34,8 @@ function App() {
       {/*<Desestructuracion/>*/}
        {/*<ProgAsincrona/>*/}
       {/*<Calculator/>*/}
-      <AsincFunciones/>
+      {/*<AsincFunciones/>*/}
+      <Form></Form>
     </>
   )
 }
