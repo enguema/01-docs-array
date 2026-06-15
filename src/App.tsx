@@ -4,6 +4,7 @@
 //import heroImg from './assets/hero.png'
 import './App.css'
 import Form from './reducer/01-gestionDeEstado';
+import MyreducerComponent from './reducer/01-reducer';
 //import ListEscultores from './01-lista/lista-escultors';
 //import BucketList from './01-lista/bucketlist';
 //import ShoppingCart from './01-lista/01-desafioShopingCart';
@@ -35,7 +36,8 @@ function App() {
        {/*<ProgAsincrona/>*/}
       {/*<Calculator/>*/}
       {/*<AsincFunciones/>*/}
-      <Form></Form>
+      {/*<Form></Form>*/}
+      <MyreducerComponent/>
     </>
   )
 }
