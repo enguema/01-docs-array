@@ -30,7 +30,7 @@ export default function MyreducerComponent() {
     function handleInputChange(e) {
         dispatch(
             { type: 'changed_name', nextName: e.target.value }
-        )
+        );
     }
 
     return (
