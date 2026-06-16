@@ -3,14 +3,17 @@ import { Input } from "@/components/ui/input";
 import { useReducer } from "react";
 
 function reducer(state: any, action: any) {
+    console.log("Imprimiendo argumentos pasados por el DISPATCHE");
+    console.log(state);
+    console.log(action);
     switch (action.type) {
         case 'increment_age': {
             //calcula y devuelve el siguiente estado
-            return { name: state.name, age: state.age + 1 }
+            return { name: state.name, age: state.age + 1, homeTown:'Ebibeyin' }
         }
 
         case 'changed_name': {
-            return { name: action.nextName, age: state.age }
+            return { name: action.nextName, age: state.age, homeTown:'Ebibeyin' }
         }
     }
 

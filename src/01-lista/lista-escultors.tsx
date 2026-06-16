@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { useState } from "react";
 
 let nextId = 0;
@@ -16,12 +17,12 @@ export default function ListEscultores() {
         <>
             <h1>Escultores inspiradores:</h1>
             <div className="div-md">
-                <input
+                <Input className="w-100"
                     value={name}
                     onChange={e => setName(e.target.value)}
                 >
-                </input>
-                <button onClick={() => {
+                </Input>
+                <Button onClick={() => {
                     {/*artist.push({ //Push muta el arreglo: no lo queremos
                         id: nextId++,
                         name: name,
@@ -31,7 +32,7 @@ export default function ListEscultores() {
                         { id: nextId++, name: name }]
                     ), setName("")
                 }}
-                >Añadir</button>
+                >Añadir</Button>
             </div>
             <div className="div-md">
                 <ul className="l-padding">

@@ -2,10 +2,12 @@
 //import reactLogo from './assets/react.svg'
 //import viteLogo from './assets/vite.svg'
 //import heroImg from './assets/hero.png'
+import ListaTareas from './01-lista/03-actualizarObj-dentroDearray';
 import './App.css'
 import Form from './reducer/01-gestionDeEstado';
-import MyreducerComponent from './reducer/01-reducer';
-//import ListEscultores from './01-lista/lista-escultors';
+import MyreducerComponent from './reducer/02-reducer';
+import ListEscultores from './01-lista/lista-escultors';
+import ListaTareasReducer from './proyecto-reducer/ListaTarreas-reducer';
 //import BucketList from './01-lista/bucketlist';
 //import ShoppingCart from './01-lista/01-desafioShopingCart';
 //import List from './01-lista/01-list';
@@ -37,7 +39,8 @@ function App() {
       {/*<Calculator/>*/}
       {/*<AsincFunciones/>*/}
       {/*<Form></Form>*/}
-      <MyreducerComponent/>
+      {/*<MyreducerComponent/>*/}
+      <ListaTareasReducer/>
     </>
   )
 }

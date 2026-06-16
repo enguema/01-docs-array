@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { useState } from "react";
 
 let nextId = 0;
@@ -18,7 +20,7 @@ export default function List() {
     return (
         <>
             <h1>Escultores Inspiradores</h1>
-            <input
+            <Input
                 value={name}
                 onChange={e => setName(e.target.value)}
             />
@@ -31,12 +33,12 @@ export default function List() {
             <ul>
                 {artists.map(artist => (
                     <li key={artist.id}>{artist.name} {' '}
-                        <button onClick={() => {
+                        <Button onClick={() => {
                             setArtists(
                                 artists.filter(a => a.id !== artist.id)
                             )
                         }}
-                        >Eliminar</button>
+                        >Eliminar</Button>
                     </li>
                 ))}
             </ul>
