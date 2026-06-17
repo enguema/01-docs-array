@@ -1,6 +1,8 @@
 import { useReducer } from "react";
-import AddTask from "./common-components/input-add-task";
-import ListTask from "./common-components/list-task";
+import AddTask from "./common-components/Input-add-task";
+import ListTask from "./common-components/List-task";
+//import AddTask from "./common-components/input-add-task";
+//import ListTask from "./common-components/list-task";
 //import { text } from "stream/consumers";
 
 function taskReducer(tasks, action) {
