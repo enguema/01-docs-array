@@ -5,7 +5,7 @@ import ListTask from "./common-components/List-task";
 //import ListTask from "./common-components/list-task";
 //import { text } from "stream/consumers";
 
-function taskReducer(tasks, action) {
+function taskReducer(tasks: any[], action: any) {
     switch(action.type) {
         case 'added':{
             return[...tasks,{
@@ -35,14 +35,14 @@ function taskReducer(tasks, action) {
 export default function ListaTareasReducer() {
     const[tasks, dispatch]=useReducer(taskReducer, initialTasks);
 
-    function handleAddTask(text){
+    function handleAddTask(text:any){
         dispatch({
             type:'added',
             id: nextId++,
             text: text
         });
     }
-    function handleChangeTask(text){
+    function handleChangeTask(text:any){
         dispatch({
             type:'changed',
             task: text

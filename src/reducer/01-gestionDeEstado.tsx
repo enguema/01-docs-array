@@ -4,14 +4,14 @@ import { useState } from "react";
 
 export default function Form() {
     const [answer, setAnswer] = useState('');
-    const [error, setError] = useState(null);
+    const [error, setError] = useState<Error | null>(null);
     const [status, setStatus] = useState('typing');
 
     if (status === 'success') {
         return <h1>That's right!</h1>
     }
 
-    async function handleSubmit(e) {
+    async function handleSubmit(e:any) {
         e.preventDefault();//Deshabilita el comportamiento por defecto del utton-submit
         setStatus('submitting');
         try {
@@ -19,11 +19,11 @@ export default function Form() {
             setStatus('success');
         } catch (error) {
             setStatus('typing');
-            setError(error);
+            setError(error instanceof Error ? error : new Error(String(error)));
         }
     }
 
-    function handleTextareaChange(e) {
+    function handleTextareaChange(e:any) {
         setAnswer(e.target.value);
     }
 
@@ -56,7 +56,7 @@ export default function Form() {
     );
 }
 
-function submitForm(answer) {
+function submitForm(answer: string) {
     //Simular una respuesta que viene de la red
     return new Promise<void>((resolve, reject) => {
         setTimeout(() => {

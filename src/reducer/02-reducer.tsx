@@ -30,7 +30,7 @@ export default function MyreducerComponent() {
         dispatch({ type: "increment_age" });
     }
 
-    function handleInputChange(e) {
+    function handleInputChange(e:any) {
         dispatch(
             { type: 'changed_name', nextName: e.target.value }
         );

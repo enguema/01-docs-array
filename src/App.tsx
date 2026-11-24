@@ -8,6 +8,10 @@ import Form from './reducer/01-gestionDeEstado';
 import MyreducerComponent from './reducer/02-reducer';
 import ListEscultores from './01-lista/lista-escultors';
 import ListaTareasReducer from './proyecto-reducer/ListaTarreas-reducer';
+import { Calculator } from 'lucide-react';
+import ShoppingCart from './01-lista/01-desafioShopingCart';
+import ListaTarreasConImmer from './01-lista/04-actualizarObj-conImmer';
+import CounterList from './01-lista/02-counterList';
 //import BucketList from './01-lista/bucketlist';
 //import ShoppingCart from './01-lista/01-desafioShopingCart';
 //import List from './01-lista/01-list';
@@ -29,9 +33,9 @@ function App() {
       {/*<BucketList></BucketList>*/}
       {/*<ShoppingCart/>*/}
       {/*<ListaTareas></ListaTareas>*/}
-      {/*<ListaTarreasConImmer/>*/}
+      {<ListaTarreasConImmer/>}
       {/*<ShoppingCart/>*/}
-      {/*<CounterList></CounterList>*/}
+      {<CounterList></CounterList>}
       {/*<List></List>*/}
 
       {/*<Desestructuracion/>*/}
@@ -40,7 +44,7 @@ function App() {
       {/*<AsincFunciones/>*/}
       {/*<Form></Form>*/}
       {/*<MyreducerComponent/>*/}
-      <ListaTareasReducer/>
+      {/*<ListaTareasReducer/>*/}
     </>
   )
 }
